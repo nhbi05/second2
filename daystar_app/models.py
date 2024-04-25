@@ -2,17 +2,17 @@ from django.db import models
 
 # Create your models here.
 class Baby(models.Model):
-    baby_id = models.
+    baby_id = models.IntegerField(null = True, blank = True)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
-    age = models.IntegerField()
+    age = models.IntegerField(null=True, blank = True)
     gender = models.CharField(max_length=255)
     
 
 
 class Sitter(models.Model):
     sitter_firstname = models.CharField(max_length=255)
-    sitter_lastname= models.CharField()
+    sitter_lastname= models.CharField(max_length=255)
     sitter_price = models.FloatField()
     start_date = models.DateField()
 

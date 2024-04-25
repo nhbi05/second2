@@ -6,7 +6,8 @@ from daystar_app.views import *
 
 urlpatterns = [
     path('', homePage, name="home"),
-    path('students/', studentsList, name="students"),
-    path('courses/', courseList, name="courses"),
-    path('transactions/', transactions, name="transactions"),
+    path('babies/', babiesList, name="babies"),
+    path('sitters/', sittersList, name="sitters"),
+    path('payments/', payments, name="payments"),
+    path('procurement/', payments, name="procurement"),
 ]
